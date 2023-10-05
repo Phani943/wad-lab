@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRKR</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="catologue.css">
+    <style>
+        .styler
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .styler li
+        {
+            list-style: none;
+            margin: 10px;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            border: 2px solid #ffffff;
+            border-radius: 10px;
+            transition: all 0.3s ease 0s;
+        }
+
+        .styler li:hover
+        {
+            background-color: #ffffff;
+            color: #000000;
+            cursor: pointer;
+        }
+
+        .styler li a
+        {
+            text-decoration: none;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <section class="home" id="#home">
+        <nav>
+            <a href="index.html">
+            <img src="logo.png" width="75px" height="75px">
+            </a>
+            <div class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="catologue.html">Catologue</a>
+                    <ul>
+                        <li><a href="btech.html">BTech</a></li>
+                        <li><a href="mtech.html">MTech</a></li>
+                      </ul>
+                </li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+            </div>
+        </nav>
+        <nav>
+            <ul class="styler">
+                <li><a href="btech.html">B-tech</a></li>
+                <li><a href="mtech.html">M-tech</a></li>
+            </ul>
+        </nav>
+    </section>
+</body>
+</html>

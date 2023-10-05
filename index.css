@@ -1,0 +1,137 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.home
+{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 6, 10, 0.6), rgba(4, 9, 10, 0.6)), url(home.png);
+    background-position: center;
+    background-size: cover;
+}
+
+nav
+{
+    display: flex;
+    padding: 2% 6%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav img
+{
+    border-radius: 50%;
+    filter: drop-shadow(10px 10px 30px yellow);
+    cursor: pointer;
+}
+
+.nav-links
+{
+    flex: 1;
+    text-align: end;
+}
+
+.nav-links ul li
+{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a
+{
+    text-decoration: none;
+    font-size: 13px;
+    color: #ffffff;
+}
+
+.nav-links ul li::after
+{
+    content: " ";
+    width: 0%;
+    background: #f34;
+    height: 2px;
+    display: block;
+}
+
+.nav-links ul li:hover::after
+{
+    width: 100%;
+    transition: 0.5s;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+  
+nav ul li:hover > ul {
+    display: block;
+}
+
+.content
+{
+    width: 100%;
+    margin-top: 60px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content h1{
+    font-size: xx-large;
+    margin: 50px;
+    color: #ffffff;
+}
+
+.content p
+{
+    margin: 20px;
+    font-family: sans-serif;
+    color: #ffffff;
+}
+
+.footer
+{
+    padding: 40px;
+    min-height: 20vh;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+}
+
+.footer p
+{
+    margin: 20px;
+}
+
+.footer .icons
+{
+    margin: 10px;
+}
+
+.footer .icons .fa
+{
+    color: #f44336;
+    margin: 10px 13px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.footer .fa-heart-o
+{
+    color: red;
+}
